@@ -1,0 +1,46 @@
+//======================================//
+
+clearfix()
+  &:before
+  &:after
+    content ''
+    display table
+    clear both
+
+anim()
+  transition all 0.25s ease-out
+
+smooth()
+  -webkit-transform translate3d(0, 0, 0)
+  -webkit-backface-visibility hidden
+  -webkit-perspective 1000
+
+font(fz, lh)
+  font-size fz
+  line-height lh
+
+//======================================//
+
+$min-width = 1170px
+$footer-height = 100px
+$footer-margin-top = 50px
+
+base-fz = 16px
+base-lh = 1.2
+base-bg = #fff
+base-color = #000
+
+regular()
+  font-family 'UniSansBook'
+  font-weight normal
+  font-style normal
+heavy()
+  font-family 'UniSansHeavy'
+  font-weight normal
+  font-style normal
+thin()
+  font-family 'UniSansThin'
+  font-weight normal
+  font-style normal
+
+//======================================//
