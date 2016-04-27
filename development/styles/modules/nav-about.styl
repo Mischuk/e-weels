@@ -1,0 +1,123 @@
+#nav-about
+  position relative
+  background #fff
+  width 100%
+  padding-top 180px
+  text-align center
+  overflow hidden
+  b
+    heavy()
+  .bg-images
+    position absolute
+    left 50%
+    top 0
+    width 1920px
+    height 100%
+    margin-left -(@width/2)
+    .top-left
+      position absolute
+      left 0
+      top 400px
+      width 447px
+      height 608px
+      background url("../images/screen_2/bg-left-top.jpg") no-repeat 0 0
+    .bottom-left
+      position absolute
+      left 0
+      bottom 0
+      width 732px
+      height 707px
+      background url("../images/screen_2/bg-left-bottom.jpg") no-repeat 0 10px
+    .bottom-right
+      position absolute
+      right 0
+      bottom 0
+      width 734px
+      height 568px
+      background url("../images/screen_2/bg-right-bottom.jpg") no-repeat 0 10px
+  .title
+    margin-bottom 100px
+    font-size 36px
+    text-transform uppercase
+    span
+      heavy()
+      font-size 48px
+  .img-1
+    width 588px
+    height 498px
+    background url("../images/screen_2/1.png") no-repeat 0 0
+  .img-2
+    width 594px
+    height 475px
+    background url("../images/screen_2/2.png") no-repeat 0 0
+  .img-3
+    width 577px
+    height 475px
+    background url("../images/screen_2/3.png") no-repeat 0 0
+  .item
+    clearfix()
+    width 100%
+    &.pb50
+      padding-bottom 50px
+    &.pb30
+      padding-bottom 30px
+    .image,
+    ul
+      position relative
+      float left
+      width 50%
+    ul
+      text-align left
+      &.pt40
+        padding-top 40px
+      &.yellow li:after
+        background $orange
+      &.red
+        padding-right 50px
+        li
+          padding-bottom 25px
+      &.red li:after
+        background $red
+      li
+        position relative
+        margin-bottom 25px
+        font-size 17px
+        line-height 22px
+        padding-left 20px
+        &:after
+          content ''
+          position absolute
+          left 0
+          top 7px
+          width 8px
+          height 8px
+
+    .image
+      &.mt50
+        margin-top -50px
+      &.mt25
+        margin-top -25px
+      &.mt125
+        margin-top -125px
+      .slogan
+        heavy()
+        font-size 33px
+        line-height 40px
+        white-space nowrap
+        &.left
+          text-align left
+          padding-left 10px
+          border-left 6px solid $orange
+          position absolute
+          left 36%
+          top 50px
+        &.right
+          text-align right
+          padding-right 10px
+          border-right 6px solid $red
+          position absolute
+          right 35%
+          top 50px
+
+
+

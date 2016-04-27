@@ -2,9 +2,22 @@
       Base grid styles
 ==========================*/
 html, body
+  regular()
+  color $black
   height 100%
+  font-size 17px
+  line-height 1.2
+  min-width 1170px
 body
+  padding-top 93px
   font-size base-fz
   line-height base-lh
   color base-color
-  background base-bg
+  background #313131
+.wrapper
+  clearfix()
+  width 1170px
+  margin-left auto
+  margin-right auto
+  position relative
+  height 100%

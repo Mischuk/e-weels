@@ -70,30 +70,12 @@ gulp.task('app:styl', function() {
     .pipe(connect.reload());
 });
 
-// Fast styles
-gulp.task('styles:styl', function() {
-  var onError = function(err) {
-    notify.onError({
-      title:    "Styles",
-      subtitle: "Failure!",
-      message:  "Error: <%= error.message %>"
-    })(err);
-    this.emit('end');
-  };
-  return gulp.src("development/styles/styles.styl")
-    .pipe(plumber({ errorHandler: onError }))
-    .pipe(sourcemaps.init())
-    .pipe(stylus())
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest("build/styles"))
-    .pipe(connect.reload());
-});
+
 
 gulp.task('watch', function () {
-  gulp.watch("development/styles/includes/*.styl", ['appstyl']);
-  gulp.watch("development/styles/modules/*.styl", ['appstyl']);
-  gulp.watch("development/styles/global.styl", ['app:styl','styles:styl']);
-  gulp.watch("development/styles/styles.styl", ['styles:styl']);
+  gulp.watch("development/styles/includes/*.styl", ['app:styl']);
+  gulp.watch("development/styles/modules/*.styl", ['app:styl']);
+  gulp.watch("development/styles/global.styl", ['app:styl']);
   gulp.watch("development/index.jade", ['jade']);
   gulp.watch("development/templates/*.jade", ['jade']);
   gulp.watch("development/images/**/*.jpg", ['jpg']);
@@ -104,4 +86,4 @@ gulp.task('watch', function () {
 });
 
 // Watching project files
-gulp.task('default', ['jade', 'app:styl', 'styles:styl', 'js', 'png', 'jpg', 'connect', 'watch']);
+gulp.task('default', ['jade', 'app:styl', 'js', 'png', 'jpg', 'connect', 'watch']);
