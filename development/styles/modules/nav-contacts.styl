@@ -1,0 +1,105 @@
+#nav-contacts
+  position relative
+  background #fff
+  text-align center
+  overflow hidden
+  > .wrapper
+    position relative
+    z-index 10
+  > .bg
+    position absolute
+    left 50%
+    top 0
+    width 1920px
+    margin-left -(@width/2)
+    height 100%
+    .right
+      position absolute
+      right 0
+      top 0
+      width 595px
+      height 268px
+      background url("../images/screen_6/bg-right-bottom.png") no-repeat 0 0
+    .left
+      position absolute
+      left 0
+      top 0
+      width 401px
+      height 277px
+      background url("../images/screen_6/bg-left-bottom.png") no-repeat 0 0
+
+  .order
+    position relative
+    z-index 10
+    margin-bottom 10px
+  .title
+    margin-bottom 40px
+    padding-top 45px
+    font-size 36px
+    text-transform uppercase
+    text-align center
+    span
+      heavy()
+      font-size 48px
+    p
+      margin 0
+      font-size 18px
+      font-weight bold
+  footer
+    position relative
+    z-index 10
+    height 100px
+    margin-top 40px
+    line-height 100px
+    background #f5f4f4
+    cursor default
+    .logo,
+    .socials,
+    .tel
+      float left
+      width 33.333%
+    .tel
+      heavy()
+      float right
+      font-size 18px
+      line-height 93px
+      span
+        display inline-block
+        font-size 30px
+        color $red
+    .logo
+      heavy()
+      display block
+      height 100%
+      color $black !important
+      font-size 36px
+    .socials
+      > span
+        display inline-block
+        vertical-align middle
+        margin-right 10px
+        font-size 16px
+        font-weight bold
+      ul
+        clearfix()
+        display inline-block
+        vertical-align middle
+      li
+        float left
+        width 38px
+        height 35px
+        margin-right 10px
+        a
+          display block
+          width 100%
+          height 100%
+          background-image url("../images/sprite.png")
+          background-repeat no-repeat
+          &.vkontakte
+            background-position -3px -446px
+          &.facebook
+            background-position -49px -446px
+          &.twitter
+            background-position -95px -446px
+          &.mail
+            background-position -141px -446px

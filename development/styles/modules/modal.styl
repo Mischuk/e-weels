@@ -1,0 +1,144 @@
+#modal
+  position relative
+  width 410px
+  height 520px
+  background #fff
+  background rgba(255,255,255,.9)
+  margin-left auto
+  margin-right auto
+  box-shadow 0 0 150px 25px rgba(255,255,255,.25)
+  .mfp-close
+    text-indent -9999px
+    background: url('../images/sprite.png') no-repeat -241px -446px;
+    width: 19px;
+    height: 19px;
+    right -30px
+    top -30px
+    opacity 1
+    &:hover
+      background-position -280px -446px
+  h1
+    display block
+    text-align center
+    font-size 30px
+    line-height 1
+    padding-top 40px
+    padding-bottom 25px
+    #modal-title
+      heavy()
+  .free-delivery
+    position absolute
+    bottom 50px
+    left 50%
+    width 260px
+    margin-left -(@width/2)
+    font-size 19px
+    line-height 30px
+    height 30px
+    text-transform uppercase
+    text-align center
+    &:before
+      content ''
+      background: url('../images/sprite.png') no-repeat -236px -193px;
+      width: 14px;
+      height: 14px;
+      position absolute
+      left 0
+      top 50%
+      margin-top -(@height/2)
+    &:after
+      content ""
+      background: url('../images/sprite.png') no-repeat -255px -193px;
+      width: 14px;
+      height: 14px;
+      position absolute
+      right 0
+      top 50%
+      margin-top -(@height/2)
+  form
+    padding-left 55px
+    padding-right 55px
+    .form-label
+      position relative
+    .modal-name
+      background: url('../images/sprite.png') no-repeat -190px -190px;
+      width: 15px;
+      height: 17px;
+      position absolute
+      left 15px
+      top 50%
+      margin-top -(@height/2)
+      z-index 2
+      cursor text
+    .modal-tel
+      background: url('../images/sprite.png') no-repeat -213px -190px;
+      width: 15px;
+      height: 15px;
+      position absolute
+      left 15px
+      top 50%
+      margin-top -(@height/2)
+      z-index 2
+      cursor text
+    .form-input
+      regular()
+      position relative
+      padding-left 40px
+      padding-right 20px
+      &:focus
+        border-color $orange
+    textarea.form-input
+      height 100px
+      max-height 100px
+      min-height 100px
+      resize none
+      padding-left 15px
+      padding-right 15px
+      padding-top 10px
+    .form-submit
+      position relative
+      display block
+      margin-left auto
+      margin-right auto
+      width 300px
+      height 55px
+      border none
+      line-height 55px
+      color #fff
+      font-size 16px
+      text-transform uppercase
+      box-shadow 0 5px 4px -1px rgba(0,0,0,.15)
+      border-radius 2px
+      &:active
+        transform translateY(1px)
+        box-shadow 0 4px 4px -1px rgba(0,0,0,.15)
+      &:hover
+        .bg .top
+          background #bc0e00
+        .bg .bottom
+          background #d31000
+    .text
+      position relative
+      z-index 10
+    .bg
+      position absolute
+      left 0
+      top 0
+      width 100%
+      height 100%
+      .top, .bottom
+        transition all .5s ease-out
+        width 100%
+        height 50%
+      .top
+        background #d31000
+      .bottom
+        background #bc0e00
+
+
+
+.popup_thank_you
+  display none
+  h1
+    padding-top 50px !important
+    padding-bottom 50px !important

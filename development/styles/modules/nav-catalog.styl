@@ -1,0 +1,348 @@
+#nav-catalog
+  position relative
+  height 823px
+  background url("../images/screen_3/bg-middle.png") no-repeat 50% -5px
+  &:before
+    content ''
+    position absolute
+    left 0
+    top -130px
+    width 100%
+    height 131px
+    z-index 11
+    background url("../images/screen_3/bg-top.png") no-repeat top center
+  &:after
+    content ''
+    position absolute
+    left 0
+    bottom -125px
+    width 100%
+    height 131px
+    z-index 11
+    background url("../images/screen_3/bg-bottom.png") no-repeat center 1px
+  .lead-title
+    width 565px
+    height 36px
+    margin-left auto
+    margin-right auto
+    margin-top 65px
+    margin-bottom 40px
+    background url("../images/screen_3/title.png") no-repeat 0 0
+  .carousel
+    position relative
+    width 986px
+    height 651px
+    margin-left auto
+    margin-right auto
+    background url("../images/screen_3/carousel-bg.png") no-repeat 0 0
+    .carousel-initial
+      position absolute
+      left 50%
+      top 50%
+      height 480px
+      width 860px
+      margin-left -(@width/2)
+      margin-top -270px
+      font-size 17px
+      *
+        outline none
+    .slick-dots
+      text-align center
+      position absolute
+      width 100%
+      bottom -105px
+      height 15px
+      left 0
+      li
+        display inline-block
+        vertical-align middle
+        margin-left 4px
+        margin-right 4px
+        button
+          text-indent -9999px
+          width 15px
+          height 15px
+          border none
+          background #bbb
+          border-radius 50%
+        &.slick-active button
+          background $orange
+          color $orange
+          animation-name changeCurrentMenu
+          animation-duration 500ms
+    .slick-arrow
+      position absolute
+      top 50%
+      width 39px
+      height 85px
+      margin-top -(@height/2)
+      background-image url("../images/sprite.png")
+      background-repeat no-repeat
+      background-color transparent
+      border none
+      display block
+      text-indent -9999px
+    .slick-prev
+      background-position 0 0
+      left -140px
+      &:hover
+        background-position -106px 0
+    .slick-next
+      background-position -53px 0
+      right -140px
+      &:hover
+        background-position -159px 0
+    .left
+      width 354px
+      float left
+      .image
+        height 312px
+        line-height 312px
+        text-align center
+        width 100%
+        margin-bottom 20px
+        background #fff
+        .carousel-colors
+          height 312px
+          overflow hidden
+        .slide
+          height 312px
+          line-height 308px
+          img
+            display inline-block
+            vertical-align middle
+            max-width 100%
+            max-height 100%
+      .price
+        padding-bottom 15px
+        margin-bottom 15px
+        border-bottom 1px solid #f1f1f1
+        span
+          heavy()
+          font-size 33px
+      .colors-nav
+        margin-top 15px
+      .color-dots
+        text-align left
+        li
+          display inline-block
+          vertical-align middle
+          margin-bottom 5px
+          margin-right 5px
+          width 38px
+          height 38px
+          button
+            display block
+            text-indent -9999px
+            border none
+            border-radius 50%
+            background none
+            width 100%
+            height 100%
+            background-image url("../images/sprite.png")
+            background-repeat no-repeat
+    .right
+      float right
+      width 450px
+      .order a
+        margin-left 0
+        margin-top 20px
+      .title
+        font-size 33px
+        border-bottom 1px solid #f1f1f1
+        padding-bottom 15px
+        margin-bottom 15px
+        heavy()
+        .small
+          font-size 20px
+      .desc
+        padding-left 25px
+        border-bottom 1px solid #f1f1f1
+        padding-bottom 5px
+        margin-bottom 15px
+        .item
+          position relative
+          margin-bottom 10px
+          &:after
+            content ""
+            position absolute
+            left -25px
+            top 50%
+            background-image url("../images/sprite.png")
+            background-repeat no-repeat
+          &.icon-1:after
+            background-position -9px -102px
+            width 14px
+            height 16px
+            margin-top -(@height/2)
+          &.icon-2:after
+            width 15px
+            height 16px
+            background-position -9px -132px
+            margin-top -(@height/2)
+          &.icon-3:after
+            width 17px
+            height 18px
+            background-position -9px -161px
+            margin-top -(@height/2)
+          &.icon-4:after
+            width 15px
+            height 16px
+            background-position -9px -192px
+            margin-top -(@height/2)
+          &.icon-5:after
+            width 20px
+            height 16px
+            background-position -9px -222px
+            margin-top -(@height/2)
+      .details
+        .row
+          clearfix()
+          &:first-child
+            .item
+              width 33.333%
+          &:last-child
+            .item
+              width 50%
+          .item
+            float left
+            height 65px
+            .val-title
+              position relative
+              font-size 16px
+              &:after
+                content ""
+                position absolute
+                top 50%
+                background-image url("../images/sprite.png")
+                background-repeat no-repeat
+            .val
+              font-size 20px
+            &.val-icon-1,
+            &.val-icon-4,
+            &.val-icon-5
+              padding-left 30px
+            &.val-icon-2,
+            &.val-icon-3
+              padding-left 38px
+            &.val-icon-1 .val-title:after
+              left -30px
+              background-position -39px -102px
+              width 21px
+              height 27px
+              margin-top -(@height/2)
+            &.val-icon-2 .val-title:after
+              width 28px
+              height 22px
+              background-position -70px -102px
+              margin-top -(@height/2)
+              left -38px
+            &.val-icon-3 .val-title:after
+              width 28px
+              height 28px
+              background-position -108px -102px
+              margin-top -(@height/2)
+              left -38px
+            &.val-icon-4 .val-title:after
+              left -30px
+              background-position -146px -102px
+              width 26px
+              height 26px
+              margin-top -(@height/2)
+            &.val-icon-5 .val-title:after
+              left -30px
+              background-position -182px -102px
+              width 23px
+              height 24px
+              margin-top -(@height/2)
+
+#nav-catalog .carousel .left .color-dots li#slick-slide10 button
+  background-position -103px -397px
+#nav-catalog .carousel .left .color-dots li#slick-slide11 button
+  background-position -149px -250px
+#nav-catalog .carousel .left .color-dots li#slick-slide12 button
+  background-position -56px -299px
+#nav-catalog .carousel .left .color-dots li#slick-slide13 button
+  background-position -56px -397px
+#nav-catalog .carousel .left .color-dots li#slick-slide14 button
+  background-position -102px -299px
+#nav-catalog .carousel .left .color-dots li#slick-slide15 button
+  background-position -149px -299px
+#nav-catalog .carousel .left .color-dots li#slick-slide16 button
+  background-position -9px -299px
+#nav-catalog .carousel .left .color-dots li#slick-slide17 button
+  background-position -195px -299px
+#nav-catalog .carousel .left .color-dots li#slick-slide18 button
+  background-position -242px -299px
+#nav-catalog .carousel .left .color-dots li#slick-slide19 button
+  background-position -288px -299px
+#nav-catalog .carousel .left .color-dots li#slick-slide110 button
+  background-position -334px -299px
+#nav-catalog .carousel .left .color-dots li#slick-slide111 button
+  background-position -9px -348px
+#nav-catalog .carousel .left .color-dots li#slick-slide112 button
+  background-position -56px -348px
+#nav-catalog .carousel .left .color-dots li#slick-slide30 button
+  background-position -149px -250px
+#nav-catalog .carousel .left .color-dots li#slick-slide31 button
+  background-position -102px -348px
+#nav-catalog .carousel .left .color-dots li#slick-slide32 button
+  background-position -335px -250px
+#nav-catalog .carousel .left .color-dots li#slick-slide33 button
+  background-position -149px -348px
+#nav-catalog .carousel .left .color-dots li#slick-slide40 button
+  background-position -333px -348px
+#nav-catalog .carousel .left .color-dots li#slick-slide41 button
+  background-position -195px -250px
+#nav-catalog .carousel .left .color-dots li#slick-slide42 button
+  background-position -288px -348px
+#nav-catalog .carousel .left .color-dots li#slick-slide43 button
+  background-position -241px -348px
+#nav-catalog .carousel .left .color-dots li#slick-slide50 button
+  background-position -103px -397px
+#nav-catalog .carousel .left .color-dots li#slick-slide51 button
+  background-position -149px -299px
+#nav-catalog .carousel .left .color-dots li#slick-slide52 button
+  background-position -9px -299px
+#nav-catalog .carousel .left .color-dots li#slick-slide53 button
+  background-position -242px -299px
+#nav-catalog .carousel .left .color-dots li#slick-slide54 button
+  background-position -103px -397px
+#nav-catalog .carousel .left .color-dots li#slick-slide55 button
+  background-position -335px -250px
+#nav-catalog .carousel .left .color-dots li#slick-slide56 button
+  background-position -9px -250px
+#nav-catalog .carousel .left .color-dots li#slick-slide57 button
+  background-position -149px -348px
+#nav-catalog .carousel .left .color-dots li#slick-slide58 button
+  background-position -242px -250px
+#nav-catalog .carousel .left .color-dots li#slick-slide59 button
+  background-position -56px -348px
+#nav-catalog .carousel .left .color-dots li#slick-slide510 button
+  background-position -9px -348px
+#nav-catalog .carousel .left .color-dots li#slick-slide60 button
+  background-position -288px -348px
+#nav-catalog .carousel .left .color-dots li#slick-slide61 button
+  background-position -195px -348px
+#nav-catalog .carousel .left .color-dots li#slick-slide62 button
+  background-position -102px -348px
+#nav-catalog .carousel .left .color-dots li#slick-slide63 button
+  background-position -59px -250px
+#nav-catalog .carousel .left .color-dots li#slick-slide64 button
+  background-position -288px -250px
+#nav-catalog .carousel .left .color-dots li#slick-slide65 button
+  background-position -241px -348px
+#nav-catalog .carousel .left .color-dots li#slick-slide70 button
+  background-position -103px -397px
+#nav-catalog .carousel .left .color-dots li#slick-slide71 button
+  background-position -56px -397px
+#nav-catalog .carousel .left .color-dots li#slick-slide72 button
+  background-position -333px -348px
+#nav-catalog .carousel .left .color-dots li#slick-slide73 button
+  background-position -288px -348px
+#nav-catalog .carousel .left .color-dots li#slick-slide74 button
+  background-position -149px -348px
+#nav-catalog .carousel .left .color-dots li#slick-slide75 button
+  background-position -56px -348px
+#nav-catalog .carousel .left .color-dots li#slick-slide76 button
+  background-position -9px -397px

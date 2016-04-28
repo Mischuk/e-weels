@@ -3,7 +3,37 @@ html
   head
     title Главная
     include templates/head.jade
-  body
+  body.loaded
+    #preloader
+      .logo#prelogo <span class="orange">E</span>-WEELS
+      .sk-folding-cube
+        div(class="sk-cube1 sk-cube")
+        div(class="sk-cube2 sk-cube")
+        div(class="sk-cube4 sk-cube")
+        div(class="sk-cube3 sk-cube")
+
+
+    div(id="modal" class="white-popup-block mfp-hide")
+      .default
+        h1 ЗАКАЗАТЬ ГИРОСКУТЕР <div id="modal-title"><span class="red">SMART</span> BALANCE</div>
+        form(action="form.php" method='post' class="form")
+          .form-label
+            label(for="modal-name").modal-name
+            input(id="modal-name" type="text" placeholder='Ваше имя' name='name' class="form-input" required="required")
+          .form-label
+            label(for="modal-tel").modal-tel
+            input(id="modal-tel" type="tel" placeholder='Номер телефона' name='tel' class="form-input" required="required")
+          .form-label
+            textarea(name="textarea" placeholder='Укажите, количество, дополнительные пожелания к заказу' class="form-input")
+          input(id="modal-type" type="hidden" name='input_type' value="Перезвонить")
+          button(type="submit" class="form-submit")
+            .bg
+              .top
+              .bottom
+            span.text Заказать гироскутер
+        .free-delivery БЕСПЛАТНАЯ ДОСТАВКА
+      .popup_thank_you
+        h1 Спасибо! <br> Заявка отправлена!
     header.m_header
       .wrapper
         nav.menu
@@ -93,7 +123,7 @@ html
               .slogan.left.yellow Привлекает<br>внимание
               .img-3
             ul.yellow.pt40
-              li <b>Гисрокутер</b> - это не просто “последнее слово” с области компактных средств передвижения, гироскутер дарит отличные впечатления водителю и привлекает внимание прохожих.
+              li <b>Гисрокутер</b> - это не просто “последнее слово” с области компактных средств передвижения, гироскутер дарит отличные впечатления<br>водителю и привлекает внимание прохожих.
               li <b>Яркий дизайн</b><br> Большой выбор моделей и модных принтов, чтобы подчеркнуть индивидуальность.
               li <b>Светодиодные фары</b> дополняют дизайн гироскутера,<br>а так же дают дополнительное освещение дорожного полотна в ночное время.
               li Каждая модель имеет многофункциональный <b>пульт управления</b>.
@@ -113,6 +143,335 @@ html
     //-           Y8,     a88
     //-            "Y888888P'
     #nav-catalog
+      .wrapper
+        .lead-title
+        .carousel
+          .carousel-initial
+            .item
+              .left
+                .image
+                  .carousel-colors
+                    .slide: img(src="images/products/1/smaravatar-black.jpg")
+                    .slide: img(src="images/products/1/smaravatar-black-carbon.jpg")
+                    .slide: img(src="images/products/1/smaravatar-black-flash.jpg")
+                    .slide: img(src="images/products/1/smaravatar-blue.jpg")
+                    .slide: img(src="images/products/1/smaravatar-blue-space.jpg")
+                    .slide: img(src="images/products/1/smaravatar-flame.jpg")
+                    .slide: img(src="images/products/1/smaravatar-graffity.jpg")
+                    .slide: img(src="images/products/1/smaravatar-graffity-street.jpg")
+                    .slide: img(src="images/products/1/smaravatar-haki.jpg")
+                    .slide: img(src="images/products/1/smaravatar-red.jpg")
+                    .slide: img(src="images/products/1/smaravatar-red-carbon.jpg")
+                    .slide: img(src="images/products/1/smaravatar-skull.jpg")
+                    .slide: img(src="images/products/1/smaravatar-white.jpg")
+                .price Цена: <span class="red">20 990</span> руб.
+                .colors
+                  | Доступные расцветки:
+                  .colors-nav
+              .right
+                .title <span class="red">SMART</span> BALANCE XPOM <br><div class="small">с колонкой Розовый</div>
+                .desc
+                  .item.icon-1 Нагрузка: 20-120 кг
+                  .item.icon-2 Габаритные размеры: 548х186х18
+                  .item.icon-3 Аккумулятор: 36 Вольт, 4.4 Ач, литий-ионная (Samsung)
+                  .item.icon-4 Время полной зарядки: 2 часа
+                  .item.icon-5 Максимальный угол наклона: 15
+                .details
+                  .row
+                    .item.val-icon-1
+                      .val-title Вес:
+                      .val 10 кг
+                    .item.val-icon-2
+                      .val-title Скорость:
+                      .val 15 км/час
+                    .item.val-icon-3
+                      .val-title Диаметр колес:
+                      .val 6,5 дюймов
+                  .row
+                    .item.val-icon-4
+                      .val-title Светодиодные фары
+                      .val LED
+                    .item.val-icon-5
+                      .val-title Встроенные аудиоколонки
+                      .val Bluetooth 4.0
+                .order
+                  a(class="popup-modal hook-btn" href="#modal")
+                    .bg
+                      .top
+                      .bottom
+                    span.text Заказать гироскутер
+            .item
+              .left
+                .image
+                  .carousel-colors
+                    .slide: img(src="images/products/2/sumka-10-2.jpg")
+                .price Цена: <span class="red">20 990</span> руб.
+                .colors
+                  .colors-nav
+              .right
+                .title <span class="red">2 SMART</span> BALANCE XPOM <br><div class="small">с колонкой Розовый</div>
+                .desc
+                  .item.icon-1 Нагрузка: 20-120 кг
+                  .item.icon-2 Габаритные размеры: 548х186х18
+                  .item.icon-3 Аккумулятор: 36 Вольт, 4.4 Ач, литий-ионная (Samsung)
+                  .item.icon-4 Время полной зарядки: 2 часа
+                  .item.icon-5 Максимальный угол наклона: 15
+                .details
+                  .row
+                    .item.val-icon-1
+                      .val-title Вес:
+                      .val 10 кг
+                    .item.val-icon-2
+                      .val-title Скорость:
+                      .val 15 км/час
+                    .item.val-icon-3
+                      .val-title Диаметр колес:
+                      .val 6,5 дюймов
+                  .row
+                    .item.val-icon-4
+                      .val-title Светодиодные фары
+                      .val LED
+                    .item.val-icon-5
+                      .val-title Встроенные аудиоколонки
+                      .val Bluetooth 4.0
+                .order
+                  a(class="popup-modal hook-btn" href="#modal")
+                    .bg
+                      .top
+                      .bottom
+                    span.text Заказать гироскутер
+            .item
+              .left
+                .image
+                  .carousel-colors
+                    .slide: img(src="images/products/3/balance-kolonka-chrom-blue.jpg")
+                    .slide: img(src="images/products/3/balance-kolonka-chrom-gold.jpg")
+                    .slide: img(src="images/products/3/balance-kolonka-chrom-pink.jpg")
+                    .slide: img(src="images/products/3/balance-silver.jpg")
+                .price Цена: <span class="red">20 990</span> руб.
+                .colors
+                  | Доступные расцветки:
+                  .colors-nav
+              .right
+                .title <span class="red">3 SMART</span> BALANCE XPOM <br><div class="small">с колонкой Розовый</div>
+                .desc
+                  .item.icon-1 Нагрузка: 20-120 кг
+                  .item.icon-2 Габаритные размеры: 548х186х18
+                  .item.icon-3 Аккумулятор: 36 Вольт, 4.4 Ач, литий-ионная (Samsung)
+                  .item.icon-4 Время полной зарядки: 2 часа
+                  .item.icon-5 Максимальный угол наклона: 15
+                .details
+                  .row
+                    .item.val-icon-1
+                      .val-title Вес:
+                      .val 10 кг
+                    .item.val-icon-2
+                      .val-title Скорость:
+                      .val 15 км/час
+                    .item.val-icon-3
+                      .val-title Диаметр колес:
+                      .val 6,5 дюймов
+                  .row
+                    .item.val-icon-4
+                      .val-title Светодиодные фары
+                      .val LED
+                    .item.val-icon-5
+                      .val-title Встроенные аудиоколонки
+                      .val Bluetooth 4.0
+                .order
+                  a(class="popup-modal hook-btn" href="#modal")
+                    .bg
+                      .top
+                      .bottom
+                    span.text Заказать гироскутер
+            .item
+              .left
+                .image
+                  .carousel-colors
+                    .slide: img(src="images/products/4/smart-balance-transformer-led-grey-k.jpg")
+                    .slide: img(src="images/products/4/smart-balance-transformer-led-purple-k.jpg")
+                    .slide: img(src="images/products/4/smart-balance-transformer-led-red-k.jpg")
+                    .slide: img(src="images/products/4/smart-balance-transformer-led-white-k.jpg")
+                .price Цена: <span class="red">20 990</span> руб.
+                .colors
+                  | Доступные расцветки:
+                  .colors-nav
+              .right
+                .title <span class="red">4 SMART</span> BALANCE XPOM <br><div class="small">с колонкой Розовый</div>
+                .desc
+                  .item.icon-1 Нагрузка: 20-120 кг
+                  .item.icon-2 Габаритные размеры: 548х186х18
+                  .item.icon-3 Аккумулятор: 36 Вольт, 4.4 Ач, литий-ионная (Samsung)
+                  .item.icon-4 Время полной зарядки: 2 часа
+                  .item.icon-5 Максимальный угол наклона: 15
+                .details
+                  .row
+                    .item.val-icon-1
+                      .val-title Вес:
+                      .val 10 кг
+                    .item.val-icon-2
+                      .val-title Скорость:
+                      .val 15 км/час
+                    .item.val-icon-3
+                      .val-title Диаметр колес:
+                      .val 6,5 дюймов
+                  .row
+                    .item.val-icon-4
+                      .val-title Светодиодные фары
+                      .val LED
+                    .item.val-icon-5
+                      .val-title Встроенные аудиоколонки
+                      .val Bluetooth 4.0
+                .order
+                  a(class="popup-modal hook-btn" href="#modal")
+                    .bg
+                      .top
+                      .bottom
+                    span.text Заказать гироскутер
+            .item
+              .left
+                .image
+                  .carousel-colors
+                    .slide: img(src="images/products/5/balance-black-carbon.jpg")
+                    .slide: img(src="images/products/5/balance-flame.jpg")
+                    .slide: img(src="images/products/5/balance-graffiti.jpg")
+                    .slide: img(src="images/products/5/balance-haka.jpg")
+                    .slide: img(src="images/products/5/balance-kolonka-black.jpg")
+                    .slide: img(src="images/products/5/balance-kolonka-chrom-pink.jpg")
+                    .slide: img(src="images/products/5/balance-kolonka-gold.jpg")
+                    .slide: img(src="images/products/5/balance-kolonka-gray.jpg")
+                    .slide: img(src="images/products/5/balance-kolonka-red.jpg")
+                    .slide: img(src="images/products/5/balance-kolonka-white.jpg")
+                    .slide: img(src="images/products/5/balance-skull-bk.jpg")
+                .price Цена: <span class="red">20 990</span> руб.
+                .colors
+                  | Доступные расцветки:
+                  .colors-nav
+              .right
+                .title <span class="red">5 SMART</span> BALANCE XPOM <br><div class="small">с колонкой Розовый</div>
+                .desc
+                  .item.icon-1 Нагрузка: 20-120 кг
+                  .item.icon-2 Габаритные размеры: 548х186х18
+                  .item.icon-3 Аккумулятор: 36 Вольт, 4.4 Ач, литий-ионная (Samsung)
+                  .item.icon-4 Время полной зарядки: 2 часа
+                  .item.icon-5 Максимальный угол наклона: 15
+                .details
+                  .row
+                    .item.val-icon-1
+                      .val-title Вес:
+                      .val 10 кг
+                    .item.val-icon-2
+                      .val-title Скорость:
+                      .val 15 км/час
+                    .item.val-icon-3
+                      .val-title Диаметр колес:
+                      .val 6,5 дюймов
+                  .row
+                    .item.val-icon-4
+                      .val-title Светодиодные фары
+                      .val LED
+                    .item.val-icon-5
+                      .val-title Встроенные аудиоколонки
+                      .val Bluetooth 4.0
+                .order
+                  a(class="popup-modal hook-btn" href="#modal")
+                    .bg
+                      .top
+                      .bottom
+                    span.text Заказать гироскутер
+            .item
+              .left
+                .image
+                  .carousel-colors
+                    .slide: img(src="images/products/6/junior-black.jpg")
+                    .slide: img(src="images/products/6/junior-black-gold-k.jpg")
+                    .slide: img(src="images/products/6/junior-gold-k.jpg")
+                    .slide: img(src="images/products/6/junior-orange.jpg")
+                    .slide: img(src="images/products/6/junior-red-k.jpg")
+                    .slide: img(src="images/products/6/junior-white.jpg")
+                .price Цена: <span class="red">20 990</span> руб.
+                .colors
+                  | Доступные расцветки:
+                  .colors-nav
+              .right
+                .title <span class="red">6 SMART</span> BALANCE XPOM <br><div class="small">с колонкой Розовый</div>
+                .desc
+                  .item.icon-1 Нагрузка: 20-120 кг
+                  .item.icon-2 Габаритные размеры: 548х186х18
+                  .item.icon-3 Аккумулятор: 36 Вольт, 4.4 Ач, литий-ионная (Samsung)
+                  .item.icon-4 Время полной зарядки: 2 часа
+                  .item.icon-5 Максимальный угол наклона: 15
+                .details
+                  .row
+                    .item.val-icon-1
+                      .val-title Вес:
+                      .val 10 кг
+                    .item.val-icon-2
+                      .val-title Скорость:
+                      .val 15 км/час
+                    .item.val-icon-3
+                      .val-title Диаметр колес:
+                      .val 6,5 дюймов
+                  .row
+                    .item.val-icon-4
+                      .val-title Светодиодные фары
+                      .val LED
+                    .item.val-icon-5
+                      .val-title Встроенные аудиоколонки
+                      .val Bluetooth 4.0
+                .order
+                  a(class="popup-modal hook-btn" href="#modal")
+                    .bg
+                      .top
+                      .bottom
+                    span.text Заказать гироскутер
+            .item
+              .left
+                .image
+                  .carousel-colors
+                    .slide: img(src="images/products/7/smart-balance-genesis-black.jpg")
+                    .slide: img(src="images/products/7/smart-balance-genesis-blue.jpg")
+                    .slide: img(src="images/products/7/smart-balance-genesis-grey.jpg")
+                    .slide: img(src="images/products/7/smart-balance-genesis-red.jpg")
+                    .slide: img(src="images/products/7/smart-balance-genesis-shampan.jpg")
+                    .slide: img(src="images/products/7/smart-balance-genesis-white.jpg")
+                    .slide: img(src="images/products/7/smart-balance-genesis-yellow.jpg")
+                .price Цена: <span class="red">20 990</span> руб.
+                .colors
+                  | Доступные расцветки:
+                  .colors-nav
+              .right
+                .title <span class="red">7 SMART</span> BALANCE XPOM <br><div class="small">с колонкой Розовый</div>
+                .desc
+                  .item.icon-1 Нагрузка: 20-120 кг
+                  .item.icon-2 Габаритные размеры: 548х186х18
+                  .item.icon-3 Аккумулятор: 36 Вольт, 4.4 Ач, литий-ионная (Samsung)
+                  .item.icon-4 Время полной зарядки: 2 часа
+                  .item.icon-5 Максимальный угол наклона: 15
+                .details
+                  .row
+                    .item.val-icon-1
+                      .val-title Вес:
+                      .val 10 кг
+                    .item.val-icon-2
+                      .val-title Скорость:
+                      .val 15 км/час
+                    .item.val-icon-3
+                      .val-title Диаметр колес:
+                      .val 6,5 дюймов
+                  .row
+                    .item.val-icon-4
+                      .val-title Светодиодные фары
+                      .val LED
+                    .item.val-icon-5
+                      .val-title Встроенные аудиоколонки
+                      .val Bluetooth 4.0
+                .order
+                  a(class="popup-modal hook-btn" href="#modal")
+                    .bg
+                      .top
+                      .bottom
+                    span.text Заказать гироскутер
     //-                  a8
     //-                ,d88
     //-               a8P88
@@ -124,6 +483,28 @@ html
     //-                  88
     //-                  88
     #nav-pluses
+      .wrapper
+        h2.title Важно не ошибиться с выбором<br><span class="red">заказывать гироскутер лучше у нас</span>
+        .list
+          .item.yellow-bottom
+            .counter 01
+            p.lead КАЧЕСТВО ПРОДУКЦИИ
+            P.desc Мы являемся официальным диллером<br>лучших проверенных брендов<br>Smart Balance и WMotion
+          .item
+            .counter 02
+            p.lead БЕСПЛАТНАЯ ДОСТАВКА
+            p.desc Оперативно и абсолютно бесплатно<br>доставляем гироскутер в удобное для<br>вас место и время
+          .item.yellow-bottom
+            .counter 03
+            p.lead 6 МЕСЯЦЕВ ГАРАНТИИ
+            p.desc Гарантийное обслуживание<br>в течении 6 месяцев. 3 сервисных<br>центра в Москве
+        .order
+          a(class="popup-modal hook-btn" href="#modal")
+            .bg
+              .top
+              .bottom
+            span.text Заказать гироскутер
+
     //-            88888888888
     //-            88
     //-            88
@@ -135,6 +516,29 @@ html
     //-            Y8a     a8P
     //-             "Y88888P"
     #nav-service
+      .bg
+        .left
+        .right
+      .wrapper
+        h2.title <span class="orange">СЕРВИСНЫЕ</span> ЦЕНТРЫ
+        .row
+          .maps
+            #map-canvas
+          .maps-trigger
+            .item.current#1
+              .name Сервисный центр #1
+              .locate Адрес: г. Москва, ул. Ленинский проспект д.98 офис 211
+              .clock Режим работы: пн-пт с 10-00 до 17-00
+            .item#2
+              .name Сервисный центр #2
+              .locate Адрес: г. Москва, ул. Рочдельская улица д.15 офис 84
+              .clock Режим работы: пн-пт с 10-00 до 17-00
+            .item#3
+              .name Сервисный центр #3
+              .locate Адрес: г. Москва, ул. Проспект мира д.211
+              .clock Режим работы: пн-пт с 10-00 до 17-00
+
+
     //-               ad8888ba,
     //-              8P'    "Y8
     //-             d8
@@ -146,8 +550,33 @@ html
     //-             88a     a8P
     //-              "Y88888P"
     #nav-contacts
+      .bg
+        .left
+        .right
+      .wrapper
+        h2.title
+          | Остались <span class="red">ВОПРОСЫ?</span>
+          p Оставьте заявку и наши специалисты свяжутся с Вами
+        .order
+          a(class="popup-modal hook-btn" href="#modal")
+            .bg
+              .top
+              .bottom
+            span.text Заказать гироскутер
+      footer
+        .wrapper
+          .logo <span class="orange">E</span>-WEELS
+          .socials
+            span Мы в социальных сетях:
+            ul
+              li: a(href="#").vkontakte
+              li: a(href="#").facebook
+              li: a(href="#").twitter
+              li: a(href="#").mail
+          .tel +7 (495) <span class="red">744-72-91</span>
 
 
     // JS
     script(src="scripts/plugins.js")
+    script(src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true")
     script(src="scripts/app.js")

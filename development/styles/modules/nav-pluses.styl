@@ -1,0 +1,64 @@
+#nav-pluses
+  position relative
+  overflow hidden
+  z-index 10
+  padding-top 180px
+  padding-bottom 150px
+  &:after
+    content ''
+    background url("../images/screen_4/bg.png") no-repeat bottom center
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100%
+  &:before
+    content ""
+    position absolute
+    left 0
+    top -130px
+    width 100%
+    height 100%
+    background #fff
+  .wrapper
+    position relative
+    z-index 10
+  .title
+    margin-bottom 40px
+    font-size 36px
+    text-transform uppercase
+    text-align center
+    span
+      heavy()
+      font-size 48px
+  .order
+    text-align center
+  .list
+    clearfix()
+    margin-bottom 25px
+    background url("../images/screen_4/image.png") no-repeat bottom center
+    .item
+      float left
+      width 33.333%
+      height 285px
+      margin-bottom 25px
+      padding-top 0px
+      text-align center
+      background url("../images/screen_4/block-image.png") no-repeat center center
+      &.yellow-bottom
+        margin-top 150px
+        .counter
+          color $orange
+      .counter
+        heavy()
+        font-size 90px
+        color #717071
+      .lead, .desc
+        margin 0
+        display block
+      .lead
+        font-size 24px
+        margin-bottom 15px
+      .desc
+        font-size 17px
+        line-height 24px
