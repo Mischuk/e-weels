@@ -131,6 +131,8 @@
           margin-right 5px
           width 38px
           height 38px
+          border-radius 50%
+          border 1px solid transparent
           button
             display block
             text-indent -9999px
@@ -141,6 +143,10 @@
             height 100%
             background-image url("../images/sprite.png")
             background-repeat no-repeat
+          &.slick-active
+            border-radius 50%
+            border 1px solid #fff
+            box-shadow 0 0 5px rgba(0,0,0,.5)
     .right
       float right
       width 450px

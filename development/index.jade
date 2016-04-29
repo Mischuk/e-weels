@@ -59,6 +59,7 @@ html
     #nav-lead
       #wrap
         #viewport
+      include templates/decs.jade
       .wrapper
         h1.title
           .row.top
@@ -98,31 +99,32 @@ html
         .bottom-left
         .bottom-right
       .wrapper
-        h2.title ПОЧЕМУ <span class="red">гироскутер (мини сигвей) -</span><br>САМЫЙ ЖЕЛАННЫЙ ПОДАРОК ЭТМ ЛЕТОМ?
+        .animatedParent
+          h2.title.animated.fadeInDownShort ПОЧЕМУ <span class="red">гироскутер (мини сигвей) -</span><br>САМЫЙ ЖЕЛАННЫЙ ПОДАРОК ЭТМ ЛЕТОМ?
         .list
-          .item.pb50
-            .image.mt50
+          .item.pb50.animatedParent
+            .image.mt50.animated.fadeInLeftShort
               .slogan.left.yellow Простота<br>эксплуатации
               .img-1
-            ul.yellow
+            ul.yellow.animated.fadeInRightShort
               li Средний вес гироскутера - всего 10 кг, а габариты 60х19х18 см., поэтому он легко помещается багажнике автомобиля, и не занимает много места дома.
               li Гироскутер понравится как детям, так и взрослым,  ограничения во весу водителя (мин. - макс.): 20 - 120 кг.
               li Наши гироскутеры оснащены энергоемкими аккумуляторамиSamsung.<br>- время полной зарядки - всего 2 часа.<br>- заряженного аккумулятора хватает на 20-25 км.<br>- цветовой индикатор уровня заряда напомнит о необходимости зарядки.
               li В комплект каждого гироскутера входит сумка, для удобногот хранения и транспортировки.
               li Скорость движения:  12-20 км./час (в зависимости от модели).
-          .item.pb30
-            ul.red
+          .item.pb30.animatedParent
+            ul.red.animated.fadeInLeftShort
               li Управлять гироскутером очень просто, освоить движение смогут и взрослые и дети всего за 5-10 мин.
               li Гироскопические датчики улавливают эти перемещения центра тяжести тела с независимых  платформ и активируют работу двух двигателей расположенных в колесах.
               li Вращение колес осуществляется вперед и назад, соответственно<br>при наклоне тела вперед устройство двигается прямо, при  отклоне-<br>нии назад происходит движение в обратном направлении.  Для поворота необходимо перенести вес на одну ногу.
-            .image.mt125
+            .image.mt125.animated.fadeInRightShort
               .slogan.right.red Интуитивно понятное<br>управление
               .img-2
-          .item
-            .image.mt25
+          .item.animatedParent
+            .image.mt25.animated.fadeInLeftShort
               .slogan.left.yellow Привлекает<br>внимание
               .img-3
-            ul.yellow.pt40
+            ul.yellow.pt40.animated.fadeInRightShort
               li <b>Гисрокутер</b> - это не просто “последнее слово” с области компактных средств передвижения, гироскутер дарит отличные впечатления<br>водителю и привлекает внимание прохожих.
               li <b>Яркий дизайн</b><br> Большой выбор моделей и модных принтов, чтобы подчеркнуть индивидуальность.
               li <b>Светодиодные фары</b> дополняют дизайн гироскутера,<br>а так же дают дополнительное освещение дорожного полотна в ночное время.
@@ -143,9 +145,10 @@ html
     //-           Y8,     a88
     //-            "Y888888P'
     #nav-catalog
-      .wrapper
-        .lead-title
-        .carousel
+      include templates/decs.jade
+      .wrapper.animatedParent
+        .lead-title.animated.fadeInDownShort
+        .carousel.animated.fadeInDownShort
           .carousel-initial
             .item
               .left
@@ -484,22 +487,23 @@ html
     //-                  88
     #nav-pluses
       .wrapper
-        h2.title Важно не ошибиться с выбором<br><span class="red">заказывать гироскутер лучше у нас</span>
-        .list
-          .item.yellow-bottom
+        .animatedParent
+          h2.title.animated.fadeInDownShort Важно не ошибиться с выбором<br><span class="red">заказывать гироскутер лучше у нас</span>
+        .list.animatedParent
+          .item.yellow-bottom.animated.growIn
             .counter 01
             p.lead КАЧЕСТВО ПРОДУКЦИИ
             P.desc Мы являемся официальным диллером<br>лучших проверенных брендов<br>Smart Balance и WMotion
-          .item
+          .item.animated.growIn
             .counter 02
             p.lead БЕСПЛАТНАЯ ДОСТАВКА
             p.desc Оперативно и абсолютно бесплатно<br>доставляем гироскутер в удобное для<br>вас место и время
-          .item.yellow-bottom
+          .item.yellow-bottom.animated.growIn
             .counter 03
             p.lead 6 МЕСЯЦЕВ ГАРАНТИИ
             p.desc Гарантийное обслуживание<br>в течении 6 месяцев. 3 сервисных<br>центра в Москве
-        .order
-          a(class="popup-modal hook-btn" href="#modal")
+        .order.animatedParent
+          a(class="popup-modal hook-btn" href="#modal").animated.growIn
             .bg
               .top
               .bottom
@@ -520,11 +524,12 @@ html
         .left
         .right
       .wrapper
-        h2.title <span class="orange">СЕРВИСНЫЕ</span> ЦЕНТРЫ
-        .row
-          .maps
+        .animatedParent
+          h2.title.animated.fadeInDownShort <span class="orange">СЕРВИСНЫЕ</span> ЦЕНТРЫ
+        .row.animatedParent
+          .maps.animated.fadeInLeftShort
             #map-canvas
-          .maps-trigger
+          .maps-trigger.animated.fadeInRightShort
             .item.current#1
               .name Сервисный центр #1
               .locate Адрес: г. Москва, ул. Ленинский проспект д.98 офис 211
@@ -553,11 +558,11 @@ html
       .bg
         .left
         .right
-      .wrapper
-        h2.title
+      .wrapper.animatedParent
+        h2.title.animated.fadeInDownShort
           | Остались <span class="red">ВОПРОСЫ?</span>
           p Оставьте заявку и наши специалисты свяжутся с Вами
-        .order
+        .order.animated.fadeInDownShort
           a(class="popup-modal hook-btn" href="#modal")
             .bg
               .top

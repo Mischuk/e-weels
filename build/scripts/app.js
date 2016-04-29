@@ -161,10 +161,6 @@ $(document).ready(function() {
     preloader: false
   });
 
-  $('#nav-catalog .right .title').each(function(){
-    console.log($(this).text());
-  });
-
   $('#nav-catalog .hook-btn').on('click', function(){
     var model = $(this).parent().parent().find('.title').text();
     $('#modal-type').val(model);
