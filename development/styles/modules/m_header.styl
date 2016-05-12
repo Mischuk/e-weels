@@ -14,7 +14,8 @@
     height 60px
     .tel, .menu li
       line-height 60px
-
+  @media screen and (max-width: 1024px)
+    position static
   .tel
     transition all .25s linear
     heavy()
@@ -27,6 +28,8 @@
       display inline-block
       font-size 30px
       color $red
+    a
+      color #000
   .menu
     float left
     ul

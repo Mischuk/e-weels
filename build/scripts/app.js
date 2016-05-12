@@ -164,6 +164,8 @@ $(document).ready(function() {
   $('#nav-catalog .hook-btn').on('click', function(){
     var model = $(this).parent().parent().find('.title').text();
     $('#modal-type').val(model);
+    var title = $(this).attr('data-title');
+    $('#modal-title').text(title);
   });
 
   // FORM

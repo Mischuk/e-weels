@@ -2,18 +2,18 @@
 // Адрес почты на который придет сообщение
 if( clean($_POST["name"]) == 'q' || clean($_POST["name"]) == 'й'  ) :
     // Отправляем только разработчику
-    $mailto  = 'mischuk.alexander@gmail.com';
+    $mailto  = 'SELFIEASY@mail.ru';
 elseif( clean($_POST["name"]) == 'test' || clean($_POST["name"]) == 'тест' ) :
     // Отправляем только нам
-    $mailto  = 'marat@lmg-media.com'.',';
-    $mailto  .= 'mb@lmg-media.com';
+    $mailto  = 'SELFIEASY@mail.ru'.',';
+    $mailto  .= 'SELFIEASY@mail.ru';
 else :
     // Отправляем всем
-    $mailto  = 'marat@lmg-media.com'.',';
-    $mailto  .= 'mb@lmg-media.com';
+    $mailto  = 'SELFIEASY@mail.ru'.',';
+    $mailto  .= 'SELFIEASY@mail.ru';
     // Скрытые копии
-    $mailto_hiden = "bcc: marat@lmg-media.com".',';
-    $mailto_hiden .= 'bcc: mb@lmg-media.com';
+    $mailto_hiden = "bcc: SELFIEASY@mail.ru".',';
+    $mailto_hiden .= 'bcc: SELFIEASY@mail.ru';
 endif;
 
 $title = 'Заявка с промостраницы E-Weels';

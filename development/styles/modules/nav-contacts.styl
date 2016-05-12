@@ -48,31 +48,54 @@
   footer
     position relative
     z-index 10
-    height 100px
+    height 150px
     margin-top 40px
-    line-height 100px
+    line-height 70px
     background #f5f4f4
     cursor default
+    .wrapper + .wrapper
+      position absolute
+      left 50%
+      bottom 20px
+      height 50px
+      width 1170px
+      margin-left -(@width/2)
+
     .logo,
     .socials,
-    .tel
+    .tel,
+    .copyrights
       float left
       width 33.333%
+    .copyrights
+      line-height 24px
+      text-align left
+    .loc
+      text-align center
     .tel
       heavy()
       float right
       font-size 18px
       line-height 93px
+      text-align right
       span
         display inline-block
         font-size 30px
         color $red
+      a
+        color #000
     .logo
       heavy()
       display block
       height 100%
       color $black !important
+      text-align left
       font-size 36px
+    .dev
+      text-align right
+      a
+        color #000
+        text-decoration underline
     .socials
       > span
         display inline-block

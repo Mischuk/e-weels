@@ -1,6 +1,7 @@
 #nav-catalog
   position relative
   height 823px
+  z-index 30
   background url("../images/screen_3/bg-middle.png") no-repeat 50% -5px
   &:before
     content ''
@@ -30,6 +31,7 @@
     background url("../images/screen_3/title.png") no-repeat 0 0
   .carousel
     position relative
+    z-index 30
     width 986px
     height 651px
     margin-left auto
@@ -53,6 +55,7 @@
       bottom -105px
       height 15px
       left 0
+      z-index 34
       li
         display inline-block
         vertical-align middle
@@ -65,6 +68,8 @@
           border none
           background #bbb
           border-radius 50%
+          position relative
+          z-index 34
         &.slick-active button
           background $orange
           color $orange
@@ -93,7 +98,7 @@
       &:hover
         background-position -159px 0
     .left
-      width 354px
+      width 390px
       float left
       .image
         height 312px
@@ -148,8 +153,14 @@
             border 1px solid #fff
             box-shadow 0 0 5px rgba(0,0,0,.5)
     .right
+      position relative
       float right
       width 450px
+      height 525px
+      .order
+        position absolute
+        left 0
+        bottom 53px
       .order a
         margin-left 0
         margin-top 20px
@@ -262,32 +273,65 @@
               height 24px
               margin-top -(@height/2)
 
-#nav-catalog .carousel .left .color-dots li#slick-slide10 button
-  background-position -103px -397px
-#nav-catalog .carousel .left .color-dots li#slick-slide11 button
-  background-position -149px -250px
-#nav-catalog .carousel .left .color-dots li#slick-slide12 button
-  background-position -56px -299px
-#nav-catalog .carousel .left .color-dots li#slick-slide13 button
-  background-position -56px -397px
-#nav-catalog .carousel .left .color-dots li#slick-slide14 button
-  background-position -102px -299px
-#nav-catalog .carousel .left .color-dots li#slick-slide15 button
-  background-position -149px -299px
-#nav-catalog .carousel .left .color-dots li#slick-slide16 button
-  background-position -9px -299px
-#nav-catalog .carousel .left .color-dots li#slick-slide17 button
-  background-position -195px -299px
-#nav-catalog .carousel .left .color-dots li#slick-slide18 button
-  background-position -242px -299px
-#nav-catalog .carousel .left .color-dots li#slick-slide19 button
-  background-position -288px -299px
-#nav-catalog .carousel .left .color-dots li#slick-slide110 button
-  background-position -334px -299px
-#nav-catalog .carousel .left .color-dots li#slick-slide111 button
-  background-position -9px -348px
-#nav-catalog .carousel .left .color-dots li#slick-slide112 button
-  background-position -56px -348px
+// Slide 1
+#nav-catalog .carousel .left .color-dots li#slick-slide10 button,
+#nav-catalog .carousel .left .color-dots li#slick-slide20 button
+  background url("../images/catalog/1/thumbs/1.png") no-repeat 0 0
+  background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide11 button,
+#nav-catalog .carousel .left .color-dots li#slick-slide21 button
+  background url("../images/catalog/1/thumbs/2.png") no-repeat 0 0
+  background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide12 button,
+#nav-catalog .carousel .left .color-dots li#slick-slide22 button
+  background url("../images/catalog/1/thumbs/3.png") no-repeat 0 0
+  background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide13 button,
+#nav-catalog .carousel .left .color-dots li#slick-slide23 button
+  background url("../images/catalog/1/thumbs/4.png") no-repeat 0 0
+  background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide14 button,
+#nav-catalog .carousel .left .color-dots li#slick-slide24 button
+  background url("../images/catalog/1/thumbs/5.png") no-repeat 0 0
+  background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide15 button,
+#nav-catalog .carousel .left .color-dots li#slick-slide25 button
+  background url("../images/catalog/1/thumbs/6.png") no-repeat 0 0
+  background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide16 button,
+#nav-catalog .carousel .left .color-dots li#slick-slide26 button
+  background url("../images/catalog/1/thumbs/7.png") no-repeat 0 0
+  background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide17 button,
+#nav-catalog .carousel .left .color-dots li#slick-slide27 button
+  background url("../images/catalog/1/thumbs/8.png") no-repeat 0 0
+  background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide18 button,
+#nav-catalog .carousel .left .color-dots li#slick-slide28 button
+  background url("../images/catalog/1/thumbs/9.png") no-repeat 0 0
+  background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide19 button,
+#nav-catalog .carousel .left .color-dots li#slick-slide29 button
+  background url("../images/catalog/1/thumbs/10.png") no-repeat 0 0
+  background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide110 button,
+#nav-catalog .carousel .left .color-dots li#slick-slide210 button
+  background url("../images/catalog/1/thumbs/11.png") no-repeat 0 0
+  background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide111 button,
+#nav-catalog .carousel .left .color-dots li#slick-slide211 button
+  background url("../images/catalog/1/thumbs/12.png") no-repeat 0 0
+  background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide112 button,
+#nav-catalog .carousel .left .color-dots li#slick-slide212 button
+  background url("../images/catalog/1/thumbs/13.png") no-repeat 0 0
+  background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide113 button,
+#nav-catalog .carousel .left .color-dots li#slick-slide213 button
+  background url("../images/catalog/1/thumbs/14.png") no-repeat 0 0
+  background-size cover
+
+//Slide 3
 #nav-catalog .carousel .left .color-dots li#slick-slide30 button
   background-position -149px -250px
 #nav-catalog .carousel .left .color-dots li#slick-slide31 button
@@ -296,59 +340,162 @@
   background-position -335px -250px
 #nav-catalog .carousel .left .color-dots li#slick-slide33 button
   background-position -149px -348px
+
+//Slide 4
 #nav-catalog .carousel .left .color-dots li#slick-slide40 button
-  background-position -333px -348px
+  background url("../images/catalog/4/thumbs/1.png") no-repeat 0 0
+  background-size cover
 #nav-catalog .carousel .left .color-dots li#slick-slide41 button
-  background-position -195px -250px
+  background url("../images/catalog/4/thumbs/2.png") no-repeat 0 0
+  background-size cover
 #nav-catalog .carousel .left .color-dots li#slick-slide42 button
-  background-position -288px -348px
+  background url("../images/catalog/4/thumbs/3.png") no-repeat 0 0
+  background-size cover
 #nav-catalog .carousel .left .color-dots li#slick-slide43 button
-  background-position -241px -348px
+  background url("../images/catalog/4/thumbs/4.png") no-repeat 0 0
+  background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide44 button
+  background url("../images/catalog/4/thumbs/5.png") no-repeat 0 0
+  background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide45 button
+  background url("../images/catalog/4/thumbs/6.png") no-repeat 0 0
+  background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide46 button
+  background url("../images/catalog/4/thumbs/7.png") no-repeat 0 0
+  background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide47 button
+  background url("../images/catalog/4/thumbs/8.png") no-repeat 0 0
+  background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide48 button
+  background url("../images/catalog/4/thumbs/9.png") no-repeat 0 0
+  background-size cover
+
+
+
+// Slide 5
 #nav-catalog .carousel .left .color-dots li#slick-slide50 button
   background-position -103px -397px
 #nav-catalog .carousel .left .color-dots li#slick-slide51 button
-  background-position -149px -299px
+  background-position -149px -250px
 #nav-catalog .carousel .left .color-dots li#slick-slide52 button
-  background-position -9px -299px
+  background-position -56px -299px
 #nav-catalog .carousel .left .color-dots li#slick-slide53 button
-  background-position -242px -299px
-#nav-catalog .carousel .left .color-dots li#slick-slide54 button
-  background-position -103px -397px
-#nav-catalog .carousel .left .color-dots li#slick-slide55 button
-  background-position -335px -250px
-#nav-catalog .carousel .left .color-dots li#slick-slide56 button
-  background-position -9px -250px
-#nav-catalog .carousel .left .color-dots li#slick-slide57 button
-  background-position -149px -348px
-#nav-catalog .carousel .left .color-dots li#slick-slide58 button
-  background-position -242px -250px
-#nav-catalog .carousel .left .color-dots li#slick-slide59 button
-  background-position -56px -348px
-#nav-catalog .carousel .left .color-dots li#slick-slide510 button
-  background-position -9px -348px
-#nav-catalog .carousel .left .color-dots li#slick-slide60 button
-  background-position -288px -348px
-#nav-catalog .carousel .left .color-dots li#slick-slide61 button
-  background-position -195px -348px
-#nav-catalog .carousel .left .color-dots li#slick-slide62 button
-  background-position -102px -348px
-#nav-catalog .carousel .left .color-dots li#slick-slide63 button
-  background-position -59px -250px
-#nav-catalog .carousel .left .color-dots li#slick-slide64 button
-  background-position -288px -250px
-#nav-catalog .carousel .left .color-dots li#slick-slide65 button
-  background-position -241px -348px
-#nav-catalog .carousel .left .color-dots li#slick-slide70 button
-  background-position -103px -397px
-#nav-catalog .carousel .left .color-dots li#slick-slide71 button
   background-position -56px -397px
+#nav-catalog .carousel .left .color-dots li#slick-slide54 button
+  background-position -102px -299px
+#nav-catalog .carousel .left .color-dots li#slick-slide55 button
+  background-position -149px -299px
+#nav-catalog .carousel .left .color-dots li#slick-slide56 button
+  background-position -9px -299px
+#nav-catalog .carousel .left .color-dots li#slick-slide57 button
+  background-position -195px -299px
+#nav-catalog .carousel .left .color-dots li#slick-slide58 button
+  background-position -242px -299px
+#nav-catalog .carousel .left .color-dots li#slick-slide59 button
+  background-position -288px -299px
+#nav-catalog .carousel .left .color-dots li#slick-slide510 button
+  background-position -334px -299px
+#nav-catalog .carousel .left .color-dots li#slick-slide511 button
+  background-position -9px -348px
+#nav-catalog .carousel .left .color-dots li#slick-slide512 button
+  background url("../images/catalog/1/thumbs/10.png") no-repeat 0 0
+  background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide513 button
+  background url("../images/catalog/5/thumbs/13.png") no-repeat 0 0
+  background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide514 button
+  background url("../images/catalog/5/thumbs/14.png") no-repeat 0 0
+  background-size cover
+
+
+// Slide non
+#nav-catalog .carousel .left .color-dots li#slick-slide60 button
+  background url("../images/catalog/none/thumbs/1.png") no-repeat 0 0
+  background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide61 button
+  background url("../images/catalog/none/thumbs/2.png") no-repeat 0 0
+  background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide62 button
+  background url("../images/catalog/none/thumbs/3.png") no-repeat 0 0
+  background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide63 button
+  background url("../images/catalog/none/thumbs/4.png") no-repeat 0 0
+  background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide64 button
+  background url("../images/catalog/none/thumbs/5.png") no-repeat 0 0
+  background-size cover
+
+//Slide 6
+#nav-catalog .carousel .left .color-dots li#slick-slide70 button
+    background url("../images/catalog/6/thumbs/1.png") no-repeat 0 0
+    background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide71 button
+    background url("../images/catalog/6/thumbs/2.png") no-repeat 0 0
+    background-size cover
 #nav-catalog .carousel .left .color-dots li#slick-slide72 button
-  background-position -333px -348px
+    background url("../images/catalog/6/thumbs/3.png") no-repeat 0 0
+    background-size cover
 #nav-catalog .carousel .left .color-dots li#slick-slide73 button
-  background-position -288px -348px
+    background url("../images/catalog/6/thumbs/4.png") no-repeat 0 0
+    background-size cover
 #nav-catalog .carousel .left .color-dots li#slick-slide74 button
-  background-position -149px -348px
+    background url("../images/catalog/6/thumbs/5.png") no-repeat 0 0
+    background-size cover
 #nav-catalog .carousel .left .color-dots li#slick-slide75 button
-  background-position -56px -348px
+    background url("../images/catalog/6/thumbs/6.png") no-repeat 0 0
+    background-size cover
 #nav-catalog .carousel .left .color-dots li#slick-slide76 button
+    background url("../images/catalog/6/thumbs/7.png") no-repeat 0 0
+    background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide77 button
+    background url("../images/catalog/6/thumbs/8.png") no-repeat 0 0
+    background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide78 button
+    background url("../images/catalog/6/thumbs/9.png") no-repeat 0 0
+    background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide79 button
+    background url("../images/catalog/6/thumbs/10.png") no-repeat 0 0
+    background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide710 button
+    background url("../images/catalog/6/thumbs/11.png") no-repeat 0 0
+    background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide711 button
+    background url("../images/catalog/6/thumbs/12.png") no-repeat 0 0
+    background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide712 button
+    background url("../images/catalog/6/thumbs/13.png") no-repeat 0 0
+    background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide713 button
+    background url("../images/catalog/6/thumbs/14.png") no-repeat 0 0
+    background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide714 button
+    background url("../images/catalog/6/thumbs/15.png") no-repeat 0 0
+    background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide715 button
+    background url("../images/catalog/6/thumbs/16.png") no-repeat 0 0
+    background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide716 button
+    background url("../images/catalog/6/thumbs/17.png") no-repeat 0 0
+    background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide717 button
+    background url("../images/catalog/6/thumbs/18.png") no-repeat 0 0
+    background-size cover
+
+
+
+
+#nav-catalog .carousel .left .color-dots li#slick-slide80 button
+  background-position -103px -397px
+#nav-catalog .carousel .left .color-dots li#slick-slide81 button
+  background-position -56px -397px
+#nav-catalog .carousel .left .color-dots li#slick-slide82 button
+  background-position -333px -348px
+#nav-catalog .carousel .left .color-dots li#slick-slide83 button
+  background-position -288px -348px
+#nav-catalog .carousel .left .color-dots li#slick-slide84 button
+  background-position -149px -348px
+#nav-catalog .carousel .left .color-dots li#slick-slide85 button
+  background url("../images/catalog/7/thumbs/6.png") no-repeat 0 0
+  background-size cover
+#nav-catalog .carousel .left .color-dots li#slick-slide86 button
   background-position -9px -397px
